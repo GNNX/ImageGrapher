@@ -1,0 +1,21 @@
+pentagon: 
+  b) python obj_detec_camera.py 3 400 5 5 5 0 pentagon
+  r) - 
+simple_duck:
+  b) python obj_detec_camera.py 10000 200 5 5 7 200 simple_duck
+  r) python obj_detec_camera.py 10000 200 5 5 7 200 simple_duck
+patrick:
+  b) python obj_detec_camera.py 10000 200 5 5 7 200 patrick
+  r) python obj_detec_camera.py 50000 200 5 5 7 200 patrick
+geometry:
+  b) python obj_detec_camera.py 13 200 3 3 7 0 geometry
+  r) -
+multiple_objects:
+  b)python obj_detec_camera.py 50000 200 2 2 100 1000 multiple_objects
+  r)python obj_detec_camera.py 50000 500 0 0 0 0 multiple_objects
+duck:
+  b)python obj_detec_camera.py 50000 200 2 2 100 1000 multiple_objects
+  r)python obj_detec_camera.py 50000 500 0 0 0 0 multiple_objects
+fishes:
+  b) - 
+  r)python obj_detec_camera.py 10000 200 3 3 0 0 fishes
