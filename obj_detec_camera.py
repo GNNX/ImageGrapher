@@ -30,7 +30,7 @@ def find_adj_nodes(x,y,a,b,len1=1,len2=1):
 	return [(i,j) for i in range(minx,maxx+1) for j in range(miny,maxy+1) if [i,j] != [x,y]]
 
 # Show original pic
-print("Original pic:")
+print("Original pic: (Press N to release)")
 video = cv2.VideoCapture(0)
 while True:
 	if len(args) > 7:
@@ -50,7 +50,7 @@ sleep(0.1)
 mono_frame = cv2.cvtColor(original_frame, cv2.COLOR_BGR2GRAY)
 
 # Show monocromatic pic
-print("Black and white pic:")
+print("Black and white pic: (Press N to release)")
 while True:
 	cv2.imshow("Much simpler",mono_frame)
 	key = cv2.waitKey(33)
@@ -80,7 +80,7 @@ if maximum_stdn_dev > 0:
 	print("Just lower resolution by {} pixels...".format(homogenize_count))
 
 	# Show homogenized pic
-	print("Unresoluted pic:")
+	print("Unresoluted pic: (Press N to release)")
 	while True:
 		cv2.imshow("Even more simple!",mono_frame)
 		key = cv2.waitKey(33)
@@ -129,6 +129,7 @@ for e in T.edges():
 	cutted_tree[x2-1][y2-1] = 0
 	cutted_tree[x1-1][y1-1] = 0
 
+print("(Press N to release)")
 # Show result form cuts
 while True:
 	cv2.imshow("New image!",cutted_tree)
